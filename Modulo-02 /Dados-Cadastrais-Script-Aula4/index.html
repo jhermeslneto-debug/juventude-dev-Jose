@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <form id="form-contato" action="/enviar" method="post">
+
+        <div style="text-align: center;">
+            <h1>Dados Cadastrais</h1>
+            <label for="nome">Nome:</label>
+            <input type="text" required name='nome' placeholder="Digite o seu nome:">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="email" required name='email' placeholder="seu.@email.com">
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" required id="senha" name='senha' placeholder="Digite sua senha">
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="number" required name='idade' placeholder="Digite sua idade">
+            <br>
+            <label for="nascimento">Data de Nascimento:</label>
+            <input type="date" required name='nascimento' placeholder="">
+            <br>
+            <input type="checkbox" required name="genero" value="sim"> Aceito os termos
+            <br>
+            <input type="radio" required name="genero" value="m"> Masculino
+            <br>
+            <input type="radio" required name="genero" value="m"> Feminino
+            <br>
+            <input type="radio" required name="genero" value="m"> Outro
+            <br>
+            <input type="file" name="Foto_perfil">
+            <br>
+            <br>
+            <select name="assunto">
+                <option value="Duvida">Duvida</option>
+                <option value="Elogio">Elogio</option>
+                <option value="reclamacao">Reclamação</option>
+            </select>
+            <br>
+            <textarea name='mensagem' rows="5" placeholder='Escreva sua mensagem'></textarea>
+            <button type="submit"style="width: 250px; height: 30px; font-size: 18px;" >Enviar Mensagem</button>
+    
+        </div>
+    </form>
+            <script>
+                    const formulario = document.querySelector(
+                "#form-contato");
+
+                formulario.addEventListener("submit",
+                function (event) {
+                event.preventDefault();
+                alert("Menssagem enviada com sucesso!");
+                });
+            </script>
+</html>

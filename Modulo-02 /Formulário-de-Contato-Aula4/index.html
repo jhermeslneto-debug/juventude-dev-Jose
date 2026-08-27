@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <form id="#form-contato" acition="/enviar" method="post">
+
+
+            <div style="text-align: center;"
+                
+                <label for="nome">Nome:</label>
+                <input type="text" name='nome' placeholder="Digite o seu nome:">
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name='email' placeholder="seu.@email.com"><br><br>
+                <label for="mensagem">Mensagem: </label>
+                <textarea name='mensagem' rows="5" placeholder='Escreva sua mensagem'></textarea>
+            </div>
+        </form>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script>
+                const formulario = document.querySelector("#form-contato");
+
+                formulario.addEventListener("submit", function (event) {
+                event.preventDefault();
+                alert("Menssagem enviada com sucesso!");
+                });
+            </script>
