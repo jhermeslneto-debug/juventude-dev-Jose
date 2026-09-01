@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <form id="#form-contato" acition="/enviar" method="post">
+    <form id="form-contato" acition="/enviar" method="post">
         <div style="text-align: center;">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Logo da empresa" style="width: 150px;">
             <h1>GitHub</h1>
             <label for="nome">Username or email address:</label>
             <br>
-            <input type="text" required style="width: 250px; height: 20px; font-size: 18px;" name='nome' placeholder="">
+            <input type="text" required minlength="4" style="width: 250px; height: 20px; font-size: 18px;" id="name" name='nome' placeholder="" width: 250px; height: 20px; font-size: 18px; required minlength="4">
             <br>
             <label for="Password"> Password:</label>
             <br>
-            <input type="password"required style="width: 250px; height: 20px; font-size: 18px;"id="senha" name='senha' placeholder="">
+            <input type="password" required minlength="8" style="width: 250px; height: 20px; font-size: 18px;"id="Password" name='senha' placeholder=""
             <br>
             <br>
             <button type="submit"style="width: 250px; height: 30px; font-size: 18px;" >Sing in</button>
@@ -20,21 +20,14 @@
         </div>
     </form>
 
-<script>
-    const formulario = document.querySelector(
-"#form-contato");
+            <script>
+                    const formulario = document.querySelector(
+                    "#form-contato");
 
-    formulario.addEventListener("submit",
-    function (event) {
-        event.preventDefalt();
-        alert("Menssagem enviada com sucesso!");
-    });
-</script>
-
-
-
-</script>
-
-
-
+                    formulario.addEventListener("submit",
+                    function (event) {
+                    event.preventDefault();
+                    alert("Menssagem enviada com sucesso!");
+                    });
+            </script>
 </html>
