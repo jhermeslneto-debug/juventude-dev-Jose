@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+    <title>Portifólio de José Hermes</title>
+</head>
+    <body>
+
+        <center><h1>Portifólio de José Hermes</h1></center><br><br>
+
+        <h3>Guia da página</h3>
+        <a href="#sobre">Sobre mim</a><br><br>
+        <a href="#minhas">Minhas Habilidades</a><br><br>
+        <a href="#projetos">Projetos</a><br><br>
+        <a href="#contato">Entre em contato</a>
+
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Olá, meu nome é José Hermes Leandro Neto sou natural de Maceió Alagoas,</p> 
+            <p>atualmente morando em Cruz das Almas Bahia. Sou estudante do CETEP-</p> 
+            <p>Centro Territorial de Educação Profissional Recôncavo II Alberto Torres cursando  2° ano de Adiministração.</p>
+            <p> Também estou fazendo um curso juventude-dev na UFRB sobre Progamação com IA Inteligência artificial </p>
+        </section>
+        <br>
+        <section id="minhas">
+            <h2>Minhas Habilidades:</h2>
+            <ul>
+                <li>Trabalho em equipe</li>
+                <li>Lógica de programação</li>
+                <li>Básico de Python</li>
+                <li>Básico em HTML</li>
+                <li>Bom em Matemática</li>
+            </ul>
+        </section>
+        <br>
+        <section id="projetos">
+            <h2>Projetos do Github</h2>
+            <a href="https://github.com/jhermeslneto-debug">Acesse minha conta Github aqui</a>
+        </section>
+        <br><br>
+        <form id="form-contato" action="/enviar" method="post">
+            <h2>Entre em contato</h2><br>
+            
+        <section id="contato">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Digite seu nome">
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Digite seu e-mail">
+                <br><br>
+
+                <h4>Sobre o que quer falar:</h4>
+                <select name="assunto">
+                    <option value="Duvida">Duvida</option>
+                    <option value="Elogio">Elogio</option>
+                    <option value="reclamacao">Reclamação</option>
+                    <option value="Outro-assunto">Outro Assunto</option>
+                </select>
+                <h4>Mensagem:</h4>
+                <textarea name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea><br><br>
+        </section>
+            <button type="submit" style="width: 200px; height: 30px; font-size: 15px;">Confirmar</button>
+        </form>
+    </body>
+<script>
+        const formulario = document.querySelector("#form-contato");
+
+        formulario.addEventListener("submit",
+        function (event) {
+        event.preventDefault();
+        alert("Menssagem enviada com sucesso! Obrigado pelo contato! Retornarei em breve.");
+        });
+</script>
+    
+</html>
