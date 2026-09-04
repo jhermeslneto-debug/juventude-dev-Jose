@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-BR"> 
+<html lang="pt-BR">   
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifólio de José Hermes</title>
+    <link rel="icon" type="image/png" href="https://static.vecteezy.com/system/resources/previews/009/267/561/non_2x/user-icon-design-free-png.png">
 </head>
     <body>
 
@@ -34,7 +37,7 @@
         <br>
         <section id="projetos">
             <h2>Projetos do Github</h2>
-            <a href="https://github.com/jhermeslneto-debug">Acesse minha conta Github aqui</a>
+            <a href="https://github.com/jhermeslneto-debug" target="_blank">Acesse minha conta Github aqui</a>
         </section>
         <br><br>
         <form id="form-contato" action="/enviar" method="post">
@@ -42,26 +45,28 @@
             
         <section id="contato">
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" placeholder="Digite seu nome">
+                <input type="text" required name="nome" placeholder="Digite seu nome">
                 <br><br>
 
                 <label for="email">E-mail:</label>
-                <input type="email" name="email" placeholder="Digite seu e-mail">
+                <input type="email" required name="email" placeholder="Digite seu e-mail">
                 <br><br>
 
                 <h4>Sobre o que quer falar:</h4>
-                <select name="assunto">
+                <select required name="assunto">
+                    <option value=""></option>
                     <option value="Duvida">Duvida</option>
                     <option value="Elogio">Elogio</option>
                     <option value="reclamacao">Reclamação</option>
                     <option value="Outro-assunto">Outro Assunto</option>
                 </select>
                 <h4>Mensagem:</h4>
-                <textarea name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea><br><br>
+                <textarea required minlength="5" name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea><br><br>
         </section>
             <button type="submit" style="width: 200px; height: 30px; font-size: 15px;">Confirmar</button>
         </form>
     </body>
+
 <script>
         const formulario = document.querySelector("#form-contato");
 
