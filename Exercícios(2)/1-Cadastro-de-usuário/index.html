@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link rel="icon" type="image/png" href="https://img.magnific.com/psd-gratuitas/assinar-documento-de-contrato-com-icone-de-caneta-ilustracao-3d_56104-2767.jpg?semt=ais_hybrid&w=740&q=80">
+</head>
+<form actinon="/enviar" method="post">
+<center>
+    <h1>Cadastro de Usuário</h1>
+    <label for="nome">Nome Completo:</label>
+    <input type="text" name="nome" id="nome" required minlength="5" placeholder="Digite seu nome completo:">
+    <br>
+    <label for="e-mail">E-mail:</label>
+    <input type="email" name="email" id="email" required minlength="3" placeholder="Ex: seu.email.@.com:">
+    <br>
+    <label for="senha">Senha:</label>
+    <input type="password" name="senha" id="senha" required minlength="8" placeholder="********">
+    <br>
+    <label for="consenha">Confirmar Senha:</label>
+    <input type="password" name="consenha" id="consenha" required minlength="8" placeholder="********">
+    <br><br>
+    <button type="submit" style="width: 250px; height: 30px; font-size: 18px;">Confirmar</button>
+</center>
+</form>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre em Contato</title>
+    <link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSgsziPatU9R8OVEfiG_FvuJcZnFvxI3Nh2IJYzS70Kw&s=10">
+</head>
+<form action="/enviar" method="post">
+    <center>
+        <h1>Fale Conosco</h1>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu.email@gmail.com" required>
+        <br><br>
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" required>
+                <option value="Duvida">Duvida</option>
+                <option value="Elogio">Elogio</option>
+                <option value="Reclamacao">Reclamação</option>
+                <option value="Sugestão">Sugestão</option>
+                <option value="Erro">Relatar Erro</option>
+                <option value="outro">Outro assunto</option>
+        </select>
+        <br><br>
+        <textarea name="mensagem" rows="8" cols="40" placeholder="Escreva sua Mensagem" required></textarea>
+        <br>
+        <button type="submit">Enviar Mensagem</button>
+    </center>
+</form>
