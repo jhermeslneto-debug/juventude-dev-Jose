@@ -8,14 +8,14 @@
 </head>
     <body>
 
-        <center><h1>Portifólio de José Hermes</h1></center><br><br>
+        <center><h1>Portifólio de José Hermes</h1><br><br>
 
         <h3>Guia da página</h3>
         <a href="#sobre">Sobre mim</a><br><br>
         <a href="#minhas">Minhas Habilidades</a><br><br>
         <a href="#projetos">Projetos</a><br><br>
         <a href="#contato">Entre em contato</a>
-
+        
         <section id="sobre">
             <h2>Sobre mim</h2>
             <p>Olá, meu nome é José Hermes Leandro Neto sou natural de Maceió Alagoas,</p> 
@@ -26,7 +26,7 @@
         <br>
         <section id="minhas">
             <h2>Minhas Habilidades:</h2>
-            <ul>
+            <ul style="display: inline-block;">
                 <li>Trabalho em equipe</li>
                 <li>Lógica de programação</li>
                 <li>Básico de Python</li>
@@ -36,14 +36,59 @@
         </section>
         <br>
         <section id="projetos">
-            <h2>Projetos do Github</h2>
+            <h2>Projetos do Github</h2><br>
             <a href="https://github.com/jhermeslneto-debug" target="_blank">Acesse minha conta Github aqui</a>
         </section>
         <br><br>
+        <h2>Cronograma de Aulas e Cursos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia da Semana:</th>
+                    <th>Manhã</th>
+                    <th>Tarde</th>
+                    <th>Noite</th>
+                </tr>             
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-Feira</td>
+                    <td>Aula</td>
+                    <td>Monitoria</td>
+                    <td>Livre</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td>
+                    <td>Aula</td>
+                    <td>Curso-UFRB</td>
+                    <td>Livre</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td>
+                    <td>Aula</td>
+                    <td>Livre</td>
+                    <td>Livre</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td>
+                    <td>Aula</td>
+                    <td>Curso-UFRB</td>
+                    <td>Livre</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td>
+                    <td>Aula</td>
+                    <td>Dia Livre</td>
+                    <td>Dia Livre</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><br>
+        <hr>
         <form id="form-contato" action="/enviar" method="post">
             <h2>Entre em contato</h2><br>
             
-        <section id="contato">
+            <section id="contato">
                 <label for="nome">Nome:</label>
                 <input type="text" required name="nome" placeholder="Digite seu nome">
                 <br><br>
@@ -61,20 +106,11 @@
                     <option value="Outro-assunto">Outro Assunto</option>
                 </select>
                 <h4>Mensagem:</h4>
-                <textarea required minlength="5" name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea><br><br>
-        </section>
+                <textarea required minlength="10" name="mensagem" rows="7" placeholder="Escreva sua mensagem"></textarea><br><br>
+            </section>
             <button type="submit" style="width: 200px; height: 30px; font-size: 15px;">Confirmar</button>
         </form>
+        </center>
     </body>
-
-<script>
-        const formulario = document.querySelector("#form-contato");
-
-        formulario.addEventListener("submit",
-        function (event) {
-        event.preventDefault();
-        alert("Menssagem enviada com sucesso! Obrigado pelo contato! Retornarei em breve.");
-        });
-</script>
-    
+    <script src="script.js"></script>
 </html>
