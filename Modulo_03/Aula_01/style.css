@@ -1,0 +1,30 @@
+/* style.css */
+body {
+    background-color: #f4f7fb;
+    font-family: Arial;
+}
+.cartao{ background: white;}
+#titulo {
+    color: #fa1b1b;
+    font-size: 32px;
+}
+.bio {
+    color: #072215;
+}
+.interesses {
+    color:rgb(252, 160, 22)
+}
+.apresentacao {
+    color: #e02911;
+    background: #dbc922;
+    font-family:Arial, sans-serif;
+    font-size: 18px;
+    text-align:center;
+}
+.link {
+    color:#fa1b1b;
+}
+.cartao h2 {
+    color:#d16a15;
+}
+.interesses > li {color:#5c290b;}
