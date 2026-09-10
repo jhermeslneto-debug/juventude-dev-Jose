@@ -1,0 +1,8 @@
+.cartao{
+    padding: 2rem;
+    border: 1px solid #feecdb;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(15, 23, 42, .15);
+    background: linear-gradient(135deg, #f00707d5,
+    #f0e000);
+}
