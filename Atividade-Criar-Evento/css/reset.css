@@ -1,0 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #04139c, #4d4bc5);
+    text-align: center;
+    padding: 20px;
+    
+}
