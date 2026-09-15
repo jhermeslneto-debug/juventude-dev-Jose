@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição do Curso</title>
+</head>
+<form action="/enviar" method="post">
+<body>
+    <center>
+        <h1>Inscrição no Curso de HTML</h1>
+        <br>
+        <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" name="nome" id="nome" placeholder="digite seu nome:" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="digite seu@email.com:" required>
+        </div>
+        <br>
+        <div>
+            <label for="cidade">Cidade:</label>
+            <input type="text" name="cidade" id="cidade" placeholder="digite sua cidade:" required>
+        </div>
+        <br>
+        <div>
+            <label for="profissao">Profissão:</label>
+            <input type="text" name="profissao" id="profissao" placeholder="digite sua profissão:" required>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Criar Senha:</label>
+            <input type="password" name="senha" id="senha" placeholder="digite sua senha" required>
+        </div>
+        <br>
+        <div>
+            <label for="confirmar">Confirmar Senha:</label>
+            <input type="password" name="confirmar" id="confirmar" placeholder="confirme sua senha:" required>
+        </div>
+        <br>
+        <div>
+            <h3>Por que você deseja aprender HTML?</h3>
+        </div>
+        <br>
+        <div>
+            <textarea name="mensagem" rows="5" placeholder="Escreva sua resposta:" required></textarea>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Realizar Inscrição</button>
+        </div>
+    </center>
+</body>
+</form>
+</html>
