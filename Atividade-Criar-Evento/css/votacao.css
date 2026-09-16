@@ -1,0 +1,12 @@
+.titulo {
+    color: white;
+    background: linear-gradient(180deg, rgb(5, 14, 111), rgb(126, 53, 245));
+    border-radius: 24px;
+    font-size: 2rem;
+    box-shadow:  0 4px 15px rgba(243, 243, 244, 0.4);;
+    border: 2px solid rgb(244, 247, 250);
+    padding: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    max-width: 32rem;
+    margin: 0 auto;
+}
