@@ -3,6 +3,7 @@
     font-size: 2rem;
     background: linear-gradient(180deg, rgb(5, 14, 111), rgb(126, 53, 245));
     border-radius: 24px;
+    box-sizing: border-box;
     border: 1px solid rgb(12, 109, 193);
     box-shadow:  0 4px 15px rgba(243, 243, 244, 0.4);;
     padding: 2rem;
@@ -22,6 +23,7 @@
 .sub2 {
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 2rem;
 }
 .img_setinha {
     width: 30px;
@@ -32,12 +34,29 @@
 .img {
     width: 5.5rem;
     padding: 10px;
+    background-color: rgb(6, 6, 132);
+    border-radius: 20px;
+    color:white;
+
+}
+.links{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .link {
+    display:inline-block;
     color: white;
-    margin-bottom: 10px;
-    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
     margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 2px solid white;
+    background-color: rgb(54, 4, 119);
+    font-weight: 700;
 }
 .competidores {
     text-align: center;
@@ -56,6 +75,7 @@
     padding: 20px;
     max-width: 32rem;
     margin: 0 auto;
+    margin-top: 50px;
 }
 .caixa_de_participantes {
     display: flex;
@@ -162,4 +182,5 @@
     text-decoration: none;
     border-radius: 30px;
     box-shadow: 0 4px 15px rgba(136, 0, 255, 0.4);
+    border: 2px solid white;
 }
