@@ -26,8 +26,9 @@
     margin: 1.5rem auto;
     margin-top: 30px;
     max-width: 32rem;
+    width: 80%;
     text-align: justify;
-    font-size:1.3rem;
+    font-size:1.2rem;
     color:white;
     padding: 10px;
     background: linear-gradient(180deg, rgb(55, 3, 129), rgb(11, 4, 229));
