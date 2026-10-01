@@ -1,0 +1,63 @@
+body {
+    background-color: gainsboro;
+}
+.caixa1 {
+    background-color: aqua;
+    align-items:left;
+    padding: 50px 10px;
+    border: 2px solid white;
+    border-radius: 30px;
+    box-sizing: border-box;
+    max-width: 75rem;
+    text-align: center;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+.fixo {
+    position:fixed;
+    top: 5px;
+    right:65px;
+    background-color: rgb(255, 0, 0);
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.caixa_pai {
+    background-color: gold;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 20px;
+    box-sizing:border-box;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: static;
+    margin-left:60px;
+    margin-right: 60px;
+    justify-content: space-between;
+
+}
+.caixa2 {
+    background-color: green;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding:150px;
+    margin-left: 20px;
+    margin-right: 500px;
+}
+.circulo {
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+}
+.retangulo {
+    background-color: rgb(255, 22, 131);
+    border: 2px solid white;
+    border-radius: 25px;
+    padding:100px;
+    width: 64rem;
+    margin-left: 20px;
+}
