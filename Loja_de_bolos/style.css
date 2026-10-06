@@ -1,3 +1,15 @@
+/*Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Parte de título*/
 h1 {
     margin: auto 0;
     text-align:center;
@@ -6,35 +18,40 @@ h1 {
     font-weight: bold;
     color: #4E342E;
 }
+/*Parte de navegação*/
 header nav a {
-    text-decoration: none;
     font-weight: bold;
-    color: #4E342E;
+    display: inline-block;
+    position: relative;
+    color:#4E342E;
 }
 header nav a:hover {
-    text-decoration: underline;
-    color: #E91E63 !important;
+    color: #E91E63 !important; 
+    transition: color 0.3s ease;
 }
 header nav a::after {
     content: '';
     position: absolute;
-    width: 0;           
-    height: 2px;       
-    bottom: -4px; 
+    bottom: -4px;
     left: 0;
-    background-color: #E91E63; 
-    transition: 0.3s ease-in-out;
+    width: 0;
+    height: 2px;
+    background-color: #E91E63;
+    transition: width 0.3s;
 }
+header nav a:hover,
+header nav a:focus {
+    color: #E91E63 !important;
+}
+header nav a:hover::after,
+header nav a:focus::after {
+    width: 100%;
+}
+
+/*Parte de cards*/
 h5{
     margin-bottom:15px;
     font-weight: bold;
-}
-.btn {
-    background-color: #E91E63;
-    border:#E91E63;
-}
-.btn:hover {
-    background-color: #be134c !important;
 }
 .card {
     width:20rem;
@@ -47,7 +64,13 @@ h5{
     gap: 30px;
     margin-top:50px;
 }
-
+.btn {
+    background-color: #E91E63;
+    border:#E91E63;
+}
+.btn:hover {
+    background-color: #a71546 !important;
+}
 .card-img-top{
     height: 250px;
     object-fit: cover;
@@ -57,4 +80,22 @@ h5{
      color: #4E342E;
      text-align: center;
      margin-top:40px;
+}
+/*Parte de cards especiais*/
+.card_bolos {
+    max-width: 60rem; 
+    margin: 0 auto; 
+    padding: 0 15px;
+}
+
+.especial-card {
+    width: 100%;
+    overflow: hidden;
+    text-align:left;
+}
+
+.img-especial {
+    width: 100%;
+    height: 200px;       
+    object-fit: cover;   
 }
