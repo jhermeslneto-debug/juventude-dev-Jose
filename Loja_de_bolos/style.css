@@ -1,0 +1,59 @@
+h1 {
+    margin: auto 0;
+    text-align:center;
+    margin-top:40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #4E342E;
+}
+header nav a {
+    transition: color 0.3s ease;
+    font-weight: bold;
+    color: #4E342E;
+}
+header nav a:hover {
+    color: #E91E63 !important;
+}
+header nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;           
+    height: 2px;       
+    bottom: -4px; 
+    left: 0;
+    background-color: #E91E63; 
+    transition: width 0.3s ease-in-out;
+}
+h5{
+    margin-bottom:15px;
+    font-weight: bold;
+}
+.btn {
+    background-color: #E91E63;
+    border:#E91E63;
+}
+.btn:hover {
+    background-color: #be134c !important;
+}
+.card {
+    width:20rem;
+    height:100%;
+}
+.card_bolos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top:50px;
+}
+
+.card-img-top{
+    height: 250px;
+    object-fit: cover;
+    width:100%;
+}
+.mb-4{
+     color: #4E342E;
+     text-align: center;
+     margin-top:40px;
+}
