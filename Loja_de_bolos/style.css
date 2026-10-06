@@ -7,11 +7,12 @@ h1 {
     color: #4E342E;
 }
 header nav a {
-    transition: color 0.3s ease;
+    text-decoration: none;
     font-weight: bold;
     color: #4E342E;
 }
 header nav a:hover {
+    text-decoration: underline;
     color: #E91E63 !important;
 }
 header nav a::after {
@@ -22,7 +23,7 @@ header nav a::after {
     bottom: -4px; 
     left: 0;
     background-color: #E91E63; 
-    transition: width 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 h5{
     margin-bottom:15px;
