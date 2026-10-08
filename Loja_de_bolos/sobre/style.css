@@ -47,10 +47,3 @@ header nav a:hover::after,
 header nav a:focus::after {
     width: 100%;
 }
-.container {
-    max-width: 50rem;
-    h5 {
-        text-align: center;
-        color: #4E342E;
-    }
-}

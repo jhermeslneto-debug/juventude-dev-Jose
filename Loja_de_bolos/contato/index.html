@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Loja de Bolos</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="bg-light shadow-sm py-4 mb-4">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <h1>Loja de Bolos</h1>
+
+            <nav class="d-flex gap-3">
+                <a href="../index.html" class="text-decoration-none text-dark fw-semibold">Home</a>
+                <a href="..sobre/index.html" class="text-decoration-none text-dark fw-semibold">Sobre</a>
+                <a href="index.html" class="text-decoration-none text-dark fw-semibold">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+<div class="container py-4" >
+    <form action="/enviar" method="post">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Entre em Contato:</h5>
+                <div class="card-text">
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Seu Nome:</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Digite seu nome:">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Seu Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensagem" class="form-label">Mensagem:</label>
+                        <textarea class="form-control" id="mensagem" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
