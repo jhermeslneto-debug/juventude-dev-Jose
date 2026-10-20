@@ -31,6 +31,7 @@ body {
     box-sizing:border-box;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column: span 2;
     position: static;
     margin-left:60px;
     margin-right: 60px;
@@ -43,7 +44,7 @@ body {
     border-radius: 25px;
     padding:150px;
     margin-left: 20px;
-    margin-right: 500px;
+    margin-right: 20px;
 }
 .circulo {
     width: 300px;
